@@ -1,0 +1,207 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    #question {
+      position: absolute;
+      left: 520px;
+      top: 200px;
+      width: 880px;
+      height: 120px;
+    }
+    #q-inner {
+      font-size: 88px;
+      font-weight: 700;
+      line-height: 120px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .hyp {
+      top: 430px;
+      width: 620px;
+      height: 200px;
+    }
+    #hypA {
+      left: 300px;
+    }
+    #hypB {
+      left: 1000px;
+    }
+    .hyp-in {
+      position: absolute;
+      inset: 0;
+    }
+    .hyp-tag {
+      position: absolute;
+      left: 24px;
+      top: 20px;
+      font-size: 30px;
+      color: var(--muted);
+    }
+    .hyp-txt {
+      position: absolute;
+      left: 24px;
+      top: 66px;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .strike {
+      position: absolute;
+      top: 516px;
+      height: 4px;
+      background: var(--ink);
+      transform-origin: left center;
+    }
+    #strikeA {
+      left: 324px;
+      width: 308px;
+    }
+    #strikeB {
+      left: 1024px;
+      width: 352px;
+    }
+    .xmark {
+      position: absolute;
+      top: 406px;
+      width: 48px;
+      height: 48px;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    #xA {
+      left: 896px;
+    }
+    #xB {
+      left: 1596px;
+    }
+  </style>
+  <div data-hf-id="hf-3y5z" id="root" data-composition-id="tension" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-52zk" id="station" class="clip station" data-start="0" data-duration="4" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-ne46" class="tx">工位 02 · 一个问题</span>
+    </div>
+    <div data-hf-id="hf-z3yd" id="question" class="clip" data-start="0" data-duration="4" data-track-index="1">
+      <div data-hf-id="hf-7eie" id="q-inner">它到底在“想”什么？</div>
+    </div>
+    <div data-hf-id="hf-zhg2" id="hypA" class="clip plate hyp" data-start="1.0" data-duration="3.0" data-track-index="2">
+      <div data-hf-id="hf-ku7t" class="hyp-in">
+        <div data-hf-id="hf-qedm" class="hyp-tag">假设 A</div>
+        <div data-hf-id="hf-8roy" class="hyp-txt">它在理解并思考</div>
+      </div>
+    </div>
+    <div data-hf-id="hf-c4y3" id="hypB" class="clip plate hyp" data-start="1.3" data-duration="2.7" data-track-index="3">
+      <div data-hf-id="hf-fky5" class="hyp-in">
+        <div data-hf-id="hf-qson" class="hyp-tag">假设 B</div>
+        <div data-hf-id="hf-6ie1" class="hyp-txt">它在背诵标准答案</div>
+      </div>
+    </div>
+    <div data-hf-id="hf-cssw" id="strikeA" class="clip strike" data-start="2.2" data-duration="1.8" data-track-index="4"></div>
+    <div data-hf-id="hf-1f4w" id="strikeB" class="clip strike" data-start="2.8" data-duration="1.2" data-track-index="5"></div>
+    <div data-hf-id="hf-3byr" id="xA" class="clip xmark" data-start="2.6" data-duration="1.4" data-track-index="6">×</div>
+    <div data-hf-id="hf-myq7" id="xB" class="clip xmark" data-start="3.2" data-duration="0.8" data-track-index="7">×</div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(
+      "#question",
+      { opacity: 0, filter: "blur(10px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.4, ease: "power4.out" },
+      0,
+    );
+    tl.fromTo("#q-inner", { scale: 0.97 }, { scale: 1, duration: 0.4, ease: "power4.out" }, 0);
+    tl.fromTo("#hypA", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 1.0);
+    tl.fromTo("#hypA .hyp-in", { x: -40 }, { x: 0, duration: 0.4, ease: "power4.out" }, 1.0);
+    tl.fromTo("#hypB", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 1.3);
+    tl.fromTo("#hypB .hyp-in", { x: 40 }, { x: 0, duration: 0.4, ease: "power4.out" }, 1.3);
+    tl.fromTo(
+      "#strikeA",
+      { scaleX: 0 },
+      { scaleX: 1, duration: 0.3, ease: "power2.inOut" },
+      2.2,
+    );
+    tl.fromTo(
+      "#strikeB",
+      { scaleX: 0 },
+      { scaleX: 1, duration: 0.3, ease: "power2.inOut" },
+      2.8,
+    );
+    tl.fromTo("#xA", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power3.out" }, 2.6);
+    tl.fromTo("#xB", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power3.out" }, 3.2);
+    window.__timelines["tension"] = tl;
+  </script>
+</template>

@@ -1,0 +1,6 @@
+[
+  {"market":"US","sku":"KC01","shipped_units":130,"ending_stock":20},
+  {"market":"DE","sku":"KC01","shipped_units":66,"ending_stock":48},
+  {"market":"US","sku":"PB02","shipped_units":72,"ending_stock":150},
+  {"market":"JP","sku":"ZERO01","shipped_units":0,"ending_stock":12}
+]

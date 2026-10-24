@@ -1,0 +1,204 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    #base {
+      position: absolute;
+      left: 320px;
+      top: 859px;
+      width: 1280px;
+      height: 2px;
+      background: var(--ink);
+    }
+    #bticks {
+      position: absolute;
+      left: 320px;
+      top: 862px;
+      width: 1280px;
+      height: 12px;
+      background: repeating-linear-gradient(
+        to right,
+        rgba(27, 36, 48, 0.35) 0 1px,
+        transparent 1px 40px
+      );
+    }
+    .bar {
+      position: absolute;
+      top: 440px;
+      width: 18px;
+      height: 420px;
+      background: rgba(27, 36, 48, 0.3);
+      transform-origin: center bottom;
+    }
+    .bar.bei {
+      background: var(--accent);
+    }
+    #lbl-bei {
+      position: absolute;
+      left: 314px;
+      top: 378px;
+      width: 44px;
+      text-align: center;
+      font-size: 44px;
+      font-weight: 700;
+    }
+    #note {
+      position: absolute;
+      left: 840px;
+      top: 930px;
+      width: 240px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--muted);
+    }
+  </style>
+  <div data-hf-id="hf-rbff" id="root" data-composition-id="dist" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-zfik" id="station" class="clip station" data-start="0" data-duration="8" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-undw" class="tx">工位 07 · 概率</span>
+    </div>
+    <div data-hf-id="hf-7uhi" id="base" class="clip" data-start="0" data-duration="8" data-track-index="1"></div>
+    <div data-hf-id="hf-my5y" id="bticks" class="clip" data-start="0" data-duration="8" data-track-index="2"></div>
+    <div data-hf-id="hf-sutu" class="bar" data-h="180"></div>
+    <div data-hf-id="hf-cy1f" class="bar" data-h="95"></div>
+    <div data-hf-id="hf-bjbh" class="bar" data-h="240"></div>
+    <div data-hf-id="hf-wxjj" class="bar" data-h="130"></div>
+    <div data-hf-id="hf-a5vz" class="bar" data-h="60"></div>
+    <div data-hf-id="hf-66zq" class="bar" data-h="210"></div>
+    <div data-hf-id="hf-0zis" class="bar" data-h="155"></div>
+    <div data-hf-id="hf-4nq4" class="bar" data-h="85"></div>
+    <div data-hf-id="hf-yuoy" class="bar" data-h="265"></div>
+    <div data-hf-id="hf-y2e0" class="bar" data-h="115"></div>
+    <div data-hf-id="hf-8pwt" class="bar" data-h="190"></div>
+    <div data-hf-id="hf-matw" class="bar" data-h="70"></div>
+    <div data-hf-id="hf-yiuo" class="bar" data-h="230"></div>
+    <div data-hf-id="hf-99u3" class="bar" data-h="145"></div>
+    <div data-hf-id="hf-kslm" class="bar" data-h="100"></div>
+    <div data-hf-id="hf-bu9e" class="bar" data-h="250"></div>
+    <div data-hf-id="hf-d4gk" class="bar" data-h="120"></div>
+    <div data-hf-id="hf-mtcx" class="bar bei" id="bar-bei" data-h="40"></div>
+    <div data-hf-id="hf-7mg1" class="bar" data-h="200"></div>
+    <div data-hf-id="hf-u6bq" class="bar" data-h="90"></div>
+    <div data-hf-id="hf-x2n7" class="bar" data-h="170"></div>
+    <div data-hf-id="hf-nz7b" class="bar" data-h="260"></div>
+    <div data-hf-id="hf-m81x" class="bar" data-h="110"></div>
+    <div data-hf-id="hf-zohl" class="bar" data-h="75"></div>
+    <div data-hf-id="hf-oypf" class="bar" data-h="215"></div>
+    <div data-hf-id="hf-5lfe" class="bar" data-h="135"></div>
+    <div data-hf-id="hf-hzc7" class="bar" data-h="185"></div>
+    <div data-hf-id="hf-itru" class="bar" data-h="65"></div>
+    <div data-hf-id="hf-ndnk" class="bar" data-h="245"></div>
+    <div data-hf-id="hf-qi49" class="bar" data-h="125"></div>
+    <div data-hf-id="hf-97l4" class="bar" data-h="160"></div>
+    <div data-hf-id="hf-s16k" class="bar" data-h="205"></div>
+    <div data-hf-id="hf-i1dt" class="bar" data-h="80"></div>
+    <div data-hf-id="hf-3m72" class="bar" data-h="225"></div>
+    <div data-hf-id="hf-ed6h" class="bar" data-h="150"></div>
+    <div data-hf-id="hf-9x3z" class="bar" data-h="105"></div>
+    <div data-hf-id="hf-kgwt" class="bar" data-h="235"></div>
+    <div data-hf-id="hf-eaxi" class="bar" data-h="175"></div>
+    <div data-hf-id="hf-j3hb" class="bar" data-h="55"></div>
+    <div data-hf-id="hf-kk8w" class="bar" data-h="195"></div>
+    <div data-hf-id="hf-4e2d" id="lbl-bei" class="clip" data-start="3.3" data-duration="4.7" data-track-index="3">
+      <div data-hf-id="hf-c6s3" id="lbl-bei-in">北</div>
+    </div>
+    <div data-hf-id="hf-iqpx" id="note" class="clip" data-start="4.5" data-duration="3.5" data-track-index="4">概率数值为示意</div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    const bars = Array.from(document.querySelectorAll(".bar"));
+    const H = bars.map((b) => parseFloat(b.dataset.h));
+    const BEI = 17;
+    bars.forEach((b, i) => {
+      b.style.left = 327 + 32 * i + "px";
+    });
+    const order = [BEI].concat(
+      bars
+        .map((_, i) => i)
+        .filter((i) => i !== BEI)
+        .sort((a, b) => H[b] - H[a]),
+    );
+    const rank = {};
+    order.forEach((barIdx, slot) => {
+      rank[barIdx] = slot;
+    });
+    const targetH = (i) => (i === BEI ? 420 : H[i]);
+    tl.fromTo("#base", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 0);
+    tl.fromTo("#bticks", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.1);
+    bars.forEach((b, i) => {
+      tl.fromTo(b, { scaleY: 0 }, { scaleY: H[i] / 420, duration: 0.45, ease: "power2.out" }, 0.3 + i * 0.02);
+    });
+    bars.forEach((b, i) => {
+      const dx = (rank[i] - i) * 32;
+      const t = 2.6;
+      tl.fromTo(b, { x: 0 }, { x: dx, duration: 1.2, ease: "power3.inOut" }, t);
+      tl.fromTo(b, { scaleY: H[i] / 420 }, { scaleY: targetH(i) / 420, duration: 1.2, ease: "power3.inOut" }, t);
+    });
+    tl.fromTo(
+      "#bar-bei",
+      { backgroundColor: "rgba(27,36,48,0.3)" },
+      { backgroundColor: "#c24018", duration: 0.4, ease: "power2.out" },
+      2.6,
+    );
+    tl.fromTo(
+      "#lbl-bei",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: "power4.out" },
+      3.9,
+    );
+    tl.fromTo("#lbl-bei-in", { y: -10 }, { y: 0, duration: 0.3, ease: "power4.out" }, 3.9);
+    tl.fromTo("#note", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power3.out" }, 4.5);
+    tl.to("#bar-bei", { x: -1000, opacity: 0, duration: 0.5, ease: "power3.in" }, 7.3);
+    tl.to("#lbl-bei-in", { x: -1000, opacity: 0, duration: 0.5, ease: "power3.in" }, 7.3);
+    bars.forEach((b, i) => {
+      if (i === BEI) return;
+      tl.to(b, { x: (rank[i] - i) * 32 - 32, duration: 0.4, ease: "power2.inOut" }, 7.3);
+    });
+    window.__timelines["dist"] = tl;
+  </script>
+</template>

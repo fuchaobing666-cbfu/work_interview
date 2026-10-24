@@ -1,0 +1,88 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+    #claim-line {
+      position: absolute;
+      left: 300px;
+      top: 475px;
+      width: 1320px;
+      height: 130px;
+    }
+    #claim-in {
+      font-size: 88px;
+      font-weight: 700;
+      line-height: 130px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      white-space: nowrap;
+    }
+    #claim-in .hl {
+      color: var(--accent);
+    }
+  </style>
+  <div data-hf-id="hf-dc55" id="root" data-composition-id="claim" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-3va2" id="station" class="clip station" data-start="0" data-duration="5.5" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-c1cl" class="tx">结案 · 一句话</span>
+    </div>
+    <div data-hf-id="hf-8kxg" id="claim-line" class="clip" data-start="0.3" data-duration="5.2" data-track-index="1">
+      <div data-hf-id="hf-msx8" id="claim-in">它不会思考，只是擅长<span data-hf-id="hf-mfph" class="hl">猜下一个词</span></div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(
+      "#claim-line",
+      { opacity: 0, filter: "blur(12px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" },
+      0.3,
+    );
+    tl.fromTo("#claim-in", { scale: 0.97 }, { scale: 1, duration: 0.5, ease: "power4.out" }, 0.3);
+    window.__timelines["claim"] = tl;
+  </script>
+</template>

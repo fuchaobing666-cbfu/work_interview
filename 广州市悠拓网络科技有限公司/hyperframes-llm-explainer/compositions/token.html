@@ -1,0 +1,246 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    #track {
+      position: absolute;
+      left: 200px;
+      top: 559px;
+      width: 1520px;
+      height: 2px;
+      background: var(--ink);
+    }
+    #ticks {
+      position: absolute;
+      left: 200px;
+      top: 562px;
+      width: 1520px;
+      height: 12px;
+      background: repeating-linear-gradient(
+        to right,
+        rgba(27, 36, 48, 0.35) 0 1px,
+        transparent 1px 40px
+      );
+    }
+    #sentence {
+      position: absolute;
+      left: 703px;
+      top: 456px;
+      width: 504px;
+      height: 104px;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 104px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    #sentence span {
+      display: inline-block;
+    }
+    .chip {
+      top: 450px;
+      width: 180px;
+      height: 110px;
+    }
+    #chip1 {
+      left: 430px;
+    }
+    #chip2 {
+      left: 650px;
+    }
+    #chip3 {
+      left: 870px;
+    }
+    #chip4 {
+      left: 1090px;
+    }
+    #chip5 {
+      left: 1310px;
+    }
+    .chip-in {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      font-weight: 700;
+    }
+    .toklabel {
+      position: absolute;
+      top: 404px;
+      width: 180px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--muted);
+    }
+    #tl1 {
+      left: 430px;
+    }
+    #tl2 {
+      left: 650px;
+    }
+    #tl3 {
+      left: 870px;
+    }
+    #tl4 {
+      left: 1090px;
+    }
+    #tl5 {
+      left: 1310px;
+    }
+    #note {
+      position: absolute;
+      left: 855px;
+      top: 930px;
+      width: 210px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--muted);
+    }
+  </style>
+  <div data-hf-id="hf-s5qk" id="root" data-composition-id="token" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ov9m" id="station" class="clip station" data-start="0" data-duration="6" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-kq5s" class="tx">工位 04 · 切词</span>
+    </div>
+    <div data-hf-id="hf-me6o" id="track" class="clip" data-start="0" data-duration="6" data-track-index="1"></div>
+    <div data-hf-id="hf-0p01" id="ticks" class="clip" data-start="0.2" data-duration="5.8" data-track-index="2"></div>
+    <div data-hf-id="hf-lu33" id="sentence" class="clip" data-start="0.4" data-duration="1.9" data-track-index="3">
+      <span data-hf-id="hf-j2vv">中国</span><span data-hf-id="hf-7oan">的</span><span data-hf-id="hf-4piw">首都</span><span data-hf-id="hf-0cui">是</span><span data-hf-id="hf-w80q">？</span>
+    </div>
+    <div data-hf-id="hf-n17o" id="chip1" class="clip plate chip" data-start="2.2" data-duration="3.8" data-track-index="4">
+      <div data-hf-id="hf-zxd4" class="chip-in">中国</div>
+    </div>
+    <div data-hf-id="hf-s971" id="chip2" class="clip plate chip" data-start="2.32" data-duration="3.68" data-track-index="5">
+      <div data-hf-id="hf-aka2" class="chip-in">的</div>
+    </div>
+    <div data-hf-id="hf-ia2x" id="chip3" class="clip plate chip" data-start="2.44" data-duration="3.56" data-track-index="6">
+      <div data-hf-id="hf-vbsb" class="chip-in">首都</div>
+    </div>
+    <div data-hf-id="hf-n7sd" id="chip4" class="clip plate chip" data-start="2.56" data-duration="3.44" data-track-index="7">
+      <div data-hf-id="hf-cly7" class="chip-in">是</div>
+    </div>
+    <div data-hf-id="hf-0g7d" id="chip5" class="clip plate chip" data-start="2.68" data-duration="3.32" data-track-index="8">
+      <div data-hf-id="hf-hrxr" class="chip-in">？</div>
+    </div>
+    <div data-hf-id="hf-w2ic" id="tl1" class="clip toklabel" data-start="2.9" data-duration="3.1" data-track-index="9">词元 1</div>
+    <div data-hf-id="hf-cxfb" id="tl2" class="clip toklabel" data-start="2.96" data-duration="3.04" data-track-index="10">词元 2</div>
+    <div data-hf-id="hf-v1km" id="tl3" class="clip toklabel" data-start="3.02" data-duration="2.98" data-track-index="11">词元 3</div>
+    <div data-hf-id="hf-vwjh" id="tl4" class="clip toklabel" data-start="3.08" data-duration="2.92" data-track-index="12">词元 4</div>
+    <div data-hf-id="hf-z86w" id="tl5" class="clip toklabel" data-start="3.14" data-duration="2.86" data-track-index="13">词元 5</div>
+    <div data-hf-id="hf-4yk6" id="note" class="clip" data-start="3.5" data-duration="2.5" data-track-index="14">切分方式为示意</div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#track", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.inOut" }, 0);
+    tl.fromTo("#ticks", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.2);
+    tl.fromTo(
+      "#sentence",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: "power3.out" },
+      0.4,
+    );
+    tl.to("#sentence span", {
+      opacity: 0,
+      y: -16,
+      duration: 0.18,
+      ease: "power2.in",
+      stagger: 0.04,
+    }, 2.2);
+    const dx = [256, 143, 32, -80, -228];
+    for (let i = 0; i < 5; i++) {
+      const n = i + 1;
+      tl.fromTo(
+        "#chip" + n + " .chip-in",
+        { x: dx[i], opacity: 0, filter: "blur(6px)" },
+        { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.35, ease: "power3.out" },
+        2.2 + i * 0.12,
+      );
+    }
+    tl.fromTo(
+      ".toklabel",
+      { opacity: 0, filter: "blur(4px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.06 },
+      2.9,
+    );
+    tl.fromTo(
+      "#note",
+      { opacity: 0 },
+      { opacity: 1, duration: 0.4, ease: "power3.out" },
+      3.5,
+    );
+    window.__timelines["token"] = tl;
+  </script>
+</template>

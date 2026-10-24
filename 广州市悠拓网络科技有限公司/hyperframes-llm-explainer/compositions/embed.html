@@ -1,0 +1,319 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    #plane {
+      left: 1000px;
+      top: 300px;
+      width: 720px;
+      height: 500px;
+    }
+    #plane-in {
+      position: absolute;
+      inset: 0;
+    }
+    #plane-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(to right, rgba(27, 36, 48, 0.07) 0 1px, transparent 1px 40px),
+        repeating-linear-gradient(to bottom, rgba(27, 36, 48, 0.07) 0 1px, transparent 1px 40px);
+    }
+    #plane-tag {
+      position: absolute;
+      left: 520px;
+      top: 436px;
+      font-size: 30px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .echip {
+      left: 180px;
+      width: 220px;
+      height: 88px;
+    }
+    #ec1 {
+      top: 276px;
+    }
+    #ec2 {
+      top: 386px;
+    }
+    #ec3 {
+      top: 496px;
+    }
+    #ec4 {
+      top: 606px;
+    }
+    #ec5 {
+      top: 716px;
+    }
+    .echip-in {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      font-weight: 700;
+    }
+    .dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--ink);
+    }
+    #d1 {
+      left: 1224px;
+      top: 424px;
+    }
+    #d2 {
+      left: 1324px;
+      top: 494px;
+    }
+    #d3 {
+      left: 1554px;
+      top: 384px;
+    }
+    #d4 {
+      left: 1444px;
+      top: 634px;
+    }
+    #d5 {
+      left: 1124px;
+      top: 654px;
+    }
+    .ring {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border: 2px dashed var(--accent);
+      border-radius: 50%;
+    }
+    #ring1 {
+      left: 1165px;
+      top: 365px;
+    }
+    #ring2 {
+      left: 1265px;
+      top: 435px;
+    }
+    #caption {
+      position: absolute;
+      left: 1126px;
+      top: 590px;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .arr {
+      position: absolute;
+      height: 2px;
+      transform-origin: left center;
+    }
+    #arr1 {
+      left: 400px;
+      top: 319px;
+      width: 837px;
+    }
+    #arr2 {
+      left: 400px;
+      top: 429px;
+      width: 933px;
+    }
+    #arr3 {
+      left: 400px;
+      top: 539px;
+      width: 1170px;
+    }
+    #arr4 {
+      left: 400px;
+      top: 649px;
+      width: 1050px;
+    }
+    #arr5 {
+      left: 400px;
+      top: 759px;
+      width: 737px;
+    }
+    .arr-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--ink);
+      transform-origin: left center;
+    }
+    .arr-head {
+      position: absolute;
+      right: -3px;
+      top: -6px;
+      width: 14px;
+      height: 14px;
+      opacity: 0;
+    }
+    .arr-head i {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  </style>
+  <div data-hf-id="hf-03xs" id="root" data-composition-id="embed" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ov9m" id="station" class="clip station" data-start="0" data-duration="6" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-l4nv" class="tx">工位 05 · 向量空间</span>
+    </div>
+    <div data-hf-id="hf-2eec" id="plane" class="clip plate" data-start="0.2" data-duration="5.8" data-track-index="1">
+      <div data-hf-id="hf-2xwj" id="plane-in">
+        <div data-hf-id="hf-snw2" id="plane-grid"></div>
+        <div data-hf-id="hf-og9e" class="dot" id="d1"></div>
+        <div data-hf-id="hf-ki5d" class="dot" id="d2"></div>
+        <div data-hf-id="hf-jqhk" class="dot" id="d3"></div>
+        <div data-hf-id="hf-fsdj" class="dot" id="d4"></div>
+        <div data-hf-id="hf-bu9i" class="dot" id="d5"></div>
+        <div data-hf-id="hf-diuv" class="ring" id="ring1"></div>
+        <div data-hf-id="hf-2nd8" class="ring" id="ring2"></div>
+        <div data-hf-id="hf-khxm" id="caption">意思近，位置近</div>
+        <div data-hf-id="hf-j34a" id="plane-tag">维度（示意）</div>
+      </div>
+    </div>
+    <div data-hf-id="hf-8a9m" id="ec1" class="clip plate echip" data-start="0.4" data-duration="5.6" data-track-index="2">
+      <div data-hf-id="hf-79n3" class="echip-in">中国</div>
+    </div>
+    <div data-hf-id="hf-3le9" id="ec2" class="clip plate echip" data-start="0.48" data-duration="5.52" data-track-index="3">
+      <div data-hf-id="hf-4czw" class="echip-in">首都</div>
+    </div>
+    <div data-hf-id="hf-pdfd" id="ec3" class="clip plate echip" data-start="0.56" data-duration="5.44" data-track-index="4">
+      <div data-hf-id="hf-ngxv" class="echip-in">的</div>
+    </div>
+    <div data-hf-id="hf-ljd5" id="ec4" class="clip plate echip" data-start="0.64" data-duration="5.36" data-track-index="5">
+      <div data-hf-id="hf-sxhq" class="echip-in">是</div>
+    </div>
+    <div data-hf-id="hf-rfk9" id="ec5" class="clip plate echip" data-start="0.72" data-duration="5.28" data-track-index="6">
+      <div data-hf-id="hf-qy2m" class="echip-in">？</div>
+    </div>
+    <div data-hf-id="hf-svn8" id="arr1" class="clip arr" data-start="1.4" data-duration="4.6" data-track-index="7">
+      <div data-hf-id="hf-ha5k" class="arr-line"></div>
+      <div data-hf-id="hf-xml8" class="arr-head"><i data-hf-id="hf-wt6k"></i></div>
+    </div>
+    <div data-hf-id="hf-rnyn" id="arr2" class="clip arr" data-start="1.52" data-duration="4.48" data-track-index="8">
+      <div data-hf-id="hf-6jz4" class="arr-line"></div>
+      <div data-hf-id="hf-m650" class="arr-head"><i data-hf-id="hf-zeb8"></i></div>
+    </div>
+    <div data-hf-id="hf-gy0n" id="arr3" class="clip arr" data-start="1.64" data-duration="4.36" data-track-index="9">
+      <div data-hf-id="hf-5d21" class="arr-line"></div>
+      <div data-hf-id="hf-kz7x" class="arr-head"><i data-hf-id="hf-y7e5"></i></div>
+    </div>
+    <div data-hf-id="hf-or7i" id="arr4" class="clip arr" data-start="1.76" data-duration="4.24" data-track-index="10">
+      <div data-hf-id="hf-5rd2" class="arr-line"></div>
+      <div data-hf-id="hf-ldiy" class="arr-head"><i data-hf-id="hf-ylp6"></i></div>
+    </div>
+    <div data-hf-id="hf-vvpa" id="arr5" class="clip arr" data-start="1.88" data-duration="4.12" data-track-index="11">
+      <div data-hf-id="hf-4kfz" class="arr-line"></div>
+      <div data-hf-id="hf-nd23" class="arr-head"><i data-hf-id="hf-0l8b"></i></div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    const rot = { "#arr1": 7.55, "#arr2": 4.31, "#arr3": -7.37, "#arr4": -0.55, "#arr5": -7.79 };
+    for (const sel in rot) gsap.set(sel, { rotation: rot[sel] });
+    tl.fromTo("#plane", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 0.2);
+    tl.fromTo("#plane-in", { scale: 0.96 }, { scale: 1, duration: 0.4, ease: "power4.out" }, 0.2);
+    tl.fromTo(".echip", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power4.out", stagger: 0.08 }, 0.4);
+    tl.fromTo(".echip-in", { x: -40 }, { x: 0, duration: 0.3, ease: "power4.out", stagger: 0.08 }, 0.4);
+    const dots = ["#d1", "#d2", "#d3", "#d4", "#d5"];
+    for (let i = 0; i < 5; i++) {
+      const s = 1.4 + i * 0.12;
+      tl.fromTo("#arr" + (i + 1) + " .arr-line", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "none" }, s);
+      tl.fromTo("#arr" + (i + 1) + " .arr-head", { opacity: 0 }, { opacity: 1, duration: 0.1 }, s + 0.3);
+      tl.fromTo(
+        dots[i],
+        { scale: 0, transformOrigin: "center center" },
+        { scale: 1, duration: 0.2, ease: "power3.out" },
+        s + 0.35,
+      );
+    }
+    tl.fromTo("#ring1", { scale: 0 }, { scale: 1, duration: 0.3, ease: "power4.out" }, 2.5);
+    tl.fromTo("#ring2", { scale: 0 }, { scale: 1, duration: 0.3, ease: "power4.out" }, 2.6);
+    tl.fromTo(
+      "#caption",
+      { opacity: 0, filter: "blur(8px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.4, ease: "power4.out" },
+      3.2,
+    );
+    window.__timelines["embed"] = tl;
+  </script>
+</template>

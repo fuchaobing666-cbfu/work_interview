@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #eceef0;
+      }
+      /* Engineering-blueprint paper: flat ground, fine 96px grid @5%, major 480px @9% */
+      #ground {
+        position: absolute;
+        inset: 0;
+        background-color: #eceef0;
+        background-image:
+          repeating-linear-gradient(to right, rgba(27, 36, 48, 0.05) 0 2px, transparent 2px 96px),
+          repeating-linear-gradient(to bottom, rgba(27, 36, 48, 0.05) 0 2px, transparent 2px 96px),
+          repeating-linear-gradient(to right, rgba(27, 36, 48, 0.09) 0 3px, transparent 3px 480px),
+          repeating-linear-gradient(to bottom, rgba(27, 36, 48, 0.09) 0 3px, transparent 3px 480px);
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-0xdq"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="54"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div data-hf-id="hf-vgxh" id="ground" class="clip" data-start="0" data-duration="54" data-track-index="0"></div>
+
+      <div data-hf-id="hf-3d16"
+        id="hook"
+        data-composition-id="hook"
+        data-composition-src="compositions/hook.html"
+        data-start="0"
+        data-duration="4"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-0v74"
+        id="tension"
+        data-composition-id="tension"
+        data-composition-src="compositions/tension.html"
+        data-start="4"
+        data-duration="4"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-b0mp"
+        id="reveal"
+        data-composition-id="reveal"
+        data-composition-src="compositions/reveal.html"
+        data-start="8"
+        data-duration="5.5"
+        data-track-index="3"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-qmox"
+        id="token"
+        data-composition-id="token"
+        data-composition-src="compositions/token.html"
+        data-start="13.5"
+        data-duration="6"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-8nou"
+        id="embed"
+        data-composition-id="embed"
+        data-composition-src="compositions/embed.html"
+        data-start="19.5"
+        data-duration="6"
+        data-track-index="5"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-g11s"
+        id="attention"
+        data-composition-id="attention"
+        data-composition-src="compositions/attention.html"
+        data-start="25.5"
+        data-duration="9"
+        data-track-index="6"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-0ekk"
+        id="dist"
+        data-composition-id="dist"
+        data-composition-src="compositions/dist.html"
+        data-start="34.5"
+        data-duration="8"
+        data-track-index="7"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-1wli"
+        id="loop"
+        data-composition-id="loop"
+        data-composition-src="compositions/loop.html"
+        data-start="42.5"
+        data-duration="6"
+        data-track-index="8"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div data-hf-id="hf-9f09"
+        id="claim"
+        data-composition-id="claim"
+        data-composition-src="compositions/claim.html"
+        data-start="48.5"
+        data-duration="5.5"
+        data-track-index="9"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

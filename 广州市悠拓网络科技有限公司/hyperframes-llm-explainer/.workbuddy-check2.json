@@ -1,0 +1,1524 @@
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (NVIDIA)" renderer="ANGLE (NVIDIA, NVIDIA GeForce GTX 1660 SUPER (0x000021C4) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+[hyperframes] check: samples 1/9
+[hyperframes] check: samples 2/9
+[hyperframes] check: samples 3/9
+[hyperframes] check: samples 4/9
+[hyperframes] check: samples 5/9
+[hyperframes] check: samples 6/9
+[hyperframes] check: samples 7/9
+[hyperframes] check: samples 8/9
+[hyperframes] check: samples 9/9
+[hyperframes] check: craft 1/424
+[hyperframes] check: craft 2/424
+[hyperframes] check: craft 3/424
+[hyperframes] check: craft 4/424
+[hyperframes] check: craft 5/424
+[hyperframes] check: craft 6/424
+[hyperframes] check: craft 7/424
+[hyperframes] check: craft 8/424
+[hyperframes] check: craft 9/424
+[hyperframes] check: craft 10/424
+[hyperframes] check: craft 11/424
+[hyperframes] check: craft 12/424
+[hyperframes] check: craft 13/424
+[hyperframes] check: craft 14/424
+[hyperframes] check: craft 15/424
+[hyperframes] check: craft 16/424
+[hyperframes] check: craft 17/424
+[hyperframes] check: craft 18/424
+[hyperframes] check: craft 19/424
+[hyperframes] check: craft 20/424
+[hyperframes] check: craft 21/424
+[hyperframes] check: craft 22/424
+[hyperframes] check: craft 23/424
+[hyperframes] check: craft 24/424
+[hyperframes] check: craft 25/424
+[hyperframes] check: craft 26/424
+[hyperframes] check: craft 27/424
+[hyperframes] check: craft 28/424
+[hyperframes] check: craft 29/424
+[hyperframes] check: craft 30/424
+[hyperframes] check: craft 31/424
+[hyperframes] check: craft 32/424
+[hyperframes] check: craft 33/424
+[hyperframes] check: craft 34/424
+[hyperframes] check: craft 35/424
+[hyperframes] check: craft 36/424
+[hyperframes] check: craft 37/424
+[hyperframes] check: craft 38/424
+[hyperframes] check: craft 39/424
+[hyperframes] check: craft 40/424
+[hyperframes] check: craft 41/424
+[hyperframes] check: craft 42/424
+[hyperframes] check: craft 43/424
+[hyperframes] check: craft 44/424
+[hyperframes] check: craft 45/424
+[hyperframes] check: craft 46/424
+[hyperframes] check: craft 47/424
+[hyperframes] check: craft 48/424
+[hyperframes] check: craft 49/424
+[hyperframes] check: craft 50/424
+[hyperframes] check: craft 51/424
+[hyperframes] check: craft 52/424
+[hyperframes] check: craft 53/424
+[hyperframes] check: craft 54/424
+[hyperframes] check: craft 55/424
+[hyperframes] check: craft 56/424
+[hyperframes] check: craft 57/424
+[hyperframes] check: craft 58/424
+[hyperframes] check: craft 59/424
+[hyperframes] check: craft 60/424
+[hyperframes] check: craft 61/424
+[hyperframes] check: craft 62/424
+[hyperframes] check: craft 63/424
+[hyperframes] check: craft 64/424
+[hyperframes] check: craft 65/424
+[hyperframes] check: craft 66/424
+[hyperframes] check: craft 67/424
+[hyperframes] check: craft 68/424
+[hyperframes] check: craft 69/424
+[hyperframes] check: craft 70/424
+[hyperframes] check: craft 71/424
+[hyperframes] check: craft 72/424
+[hyperframes] check: craft 73/424
+[hyperframes] check: craft 74/424
+[hyperframes] check: craft 75/424
+[hyperframes] check: craft 76/424
+[hyperframes] check: craft 77/424
+[hyperframes] check: craft 78/424
+[hyperframes] check: craft 79/424
+[hyperframes] check: craft 80/424
+[hyperframes] check: craft 81/424
+[hyperframes] check: craft 82/424
+[hyperframes] check: craft 83/424
+[hyperframes] check: craft 84/424
+[hyperframes] check: craft 85/424
+[hyperframes] check: craft 86/424
+[hyperframes] check: craft 87/424
+[hyperframes] check: craft 88/424
+[hyperframes] check: craft 89/424
+[hyperframes] check: craft 90/424
+[hyperframes] check: craft 91/424
+[hyperframes] check: craft 92/424
+[hyperframes] check: craft 93/424
+[hyperframes] check: craft 94/424
+[hyperframes] check: craft 95/424
+[hyperframes] check: craft 96/424
+[hyperframes] check: craft 97/424
+[hyperframes] check: craft 98/424
+[hyperframes] check: craft 99/424
+[hyperframes] check: craft 100/424
+[hyperframes] check: craft 101/424
+[hyperframes] check: craft 102/424
+[hyperframes] check: craft 103/424
+[hyperframes] check: craft 104/424
+[hyperframes] check: craft 105/424
+[hyperframes] check: craft 106/424
+[hyperframes] check: craft 107/424
+[hyperframes] check: craft 108/424
+[hyperframes] check: craft 109/424
+[hyperframes] check: craft 110/424
+[hyperframes] check: craft 111/424
+[hyperframes] check: craft 112/424
+[hyperframes] check: craft 113/424
+[hyperframes] check: craft 114/424
+[hyperframes] check: craft 115/424
+[hyperframes] check: craft 116/424
+[hyperframes] check: craft 117/424
+[hyperframes] check: craft 118/424
+[hyperframes] check: craft 119/424
+[hyperframes] check: craft 120/424
+[hyperframes] check: craft 121/424
+[hyperframes] check: craft 122/424
+[hyperframes] check: craft 123/424
+[hyperframes] check: craft 124/424
+[hyperframes] check: craft 125/424
+[hyperframes] check: craft 126/424
+[hyperframes] check: craft 127/424
+[hyperframes] check: craft 128/424
+[hyperframes] check: craft 129/424
+[hyperframes] check: craft 130/424
+[hyperframes] check: craft 131/424
+[hyperframes] check: craft 132/424
+[hyperframes] check: craft 133/424
+[hyperframes] check: craft 134/424
+[hyperframes] check: craft 135/424
+[hyperframes] check: craft 136/424
+[hyperframes] check: craft 137/424
+[hyperframes] check: craft 138/424
+[hyperframes] check: craft 139/424
+[hyperframes] check: craft 140/424
+[hyperframes] check: craft 141/424
+[hyperframes] check: craft 142/424
+[hyperframes] check: craft 143/424
+[hyperframes] check: craft 144/424
+[hyperframes] check: craft 145/424
+[hyperframes] check: craft 146/424
+[hyperframes] check: craft 147/424
+[hyperframes] check: craft 148/424
+[hyperframes] check: craft 149/424
+[hyperframes] check: craft 150/424
+[hyperframes] check: craft 151/424
+[hyperframes] check: craft 152/424
+[hyperframes] check: craft 153/424
+[hyperframes] check: craft 154/424
+[hyperframes] check: craft 155/424
+[hyperframes] check: craft 156/424
+[hyperframes] check: craft 157/424
+[hyperframes] check: craft 158/424
+[hyperframes] check: craft 159/424
+[hyperframes] check: craft 160/424
+[hyperframes] check: craft 161/424
+[hyperframes] check: craft 162/424
+[hyperframes] check: craft 163/424
+[hyperframes] check: craft 164/424
+[hyperframes] check: craft 165/424
+[hyperframes] check: craft 166/424
+[hyperframes] check: craft 167/424
+[hyperframes] check: craft 168/424
+[hyperframes] check: craft 169/424
+[hyperframes] check: craft 170/424
+[hyperframes] check: craft 171/424
+[hyperframes] check: craft 172/424
+[hyperframes] check: craft 173/424
+[hyperframes] check: craft 174/424
+[hyperframes] check: craft 175/424
+[hyperframes] check: craft 176/424
+[hyperframes] check: craft 177/424
+[hyperframes] check: craft 178/424
+[hyperframes] check: craft 179/424
+[hyperframes] check: craft 180/424
+[hyperframes] check: craft 181/424
+[hyperframes] check: craft 182/424
+[hyperframes] check: craft 183/424
+[hyperframes] check: craft 184/424
+[hyperframes] check: craft 185/424
+[hyperframes] check: craft 186/424
+[hyperframes] check: craft 187/424
+[hyperframes] check: craft 188/424
+[hyperframes] check: craft 189/424
+[hyperframes] check: craft 190/424
+[hyperframes] check: craft 191/424
+[hyperframes] check: craft 192/424
+[hyperframes] check: craft 193/424
+[hyperframes] check: craft 194/424
+[hyperframes] check: craft 195/424
+[hyperframes] check: craft 196/424
+[hyperframes] check: craft 197/424
+[hyperframes] check: craft 198/424
+[hyperframes] check: craft 199/424
+[hyperframes] check: craft 200/424
+[hyperframes] check: craft 201/424
+[hyperframes] check: craft 202/424
+[hyperframes] check: craft 203/424
+[hyperframes] check: craft 204/424
+[hyperframes] check: craft 205/424
+[hyperframes] check: craft 206/424
+[hyperframes] check: craft 207/424
+[hyperframes] check: craft 208/424
+[hyperframes] check: craft 209/424
+[hyperframes] check: craft 210/424
+[hyperframes] check: craft 211/424
+[hyperframes] check: craft 212/424
+[hyperframes] check: craft 213/424
+[hyperframes] check: craft 214/424
+[hyperframes] check: craft 215/424
+[hyperframes] check: craft 216/424
+[hyperframes] check: craft 217/424
+[hyperframes] check: craft 218/424
+[hyperframes] check: craft 219/424
+[hyperframes] check: craft 220/424
+[hyperframes] check: craft 221/424
+[hyperframes] check: craft 222/424
+[hyperframes] check: craft 223/424
+[hyperframes] check: craft 224/424
+[hyperframes] check: craft 225/424
+[hyperframes] check: craft 226/424
+[hyperframes] check: craft 227/424
+[hyperframes] check: craft 228/424
+[hyperframes] check: craft 229/424
+[hyperframes] check: craft 230/424
+[hyperframes] check: craft 231/424
+[hyperframes] check: craft 232/424
+[hyperframes] check: craft 233/424
+[hyperframes] check: craft 234/424
+[hyperframes] check: craft 235/424
+[hyperframes] check: craft 236/424
+[hyperframes] check: craft 237/424
+[hyperframes] check: craft 238/424
+[hyperframes] check: craft 239/424
+[hyperframes] check: craft 240/424
+[hyperframes] check: craft 241/424
+[hyperframes] check: craft 242/424
+[hyperframes] check: craft 243/424
+[hyperframes] check: craft 244/424
+[hyperframes] check: craft 245/424
+[hyperframes] check: craft 246/424
+[hyperframes] check: craft 247/424
+[hyperframes] check: craft 248/424
+[hyperframes] check: craft 249/424
+[hyperframes] check: craft 250/424
+[hyperframes] check: craft 251/424
+[hyperframes] check: craft 252/424
+[hyperframes] check: craft 253/424
+[hyperframes] check: craft 254/424
+[hyperframes] check: craft 255/424
+[hyperframes] check: craft 256/424
+[hyperframes] check: craft 257/424
+[hyperframes] check: craft 258/424
+[hyperframes] check: craft 259/424
+[hyperframes] check: craft 260/424
+[hyperframes] check: craft 261/424
+[hyperframes] check: craft 262/424
+[hyperframes] check: craft 263/424
+[hyperframes] check: craft 264/424
+[hyperframes] check: craft 265/424
+[hyperframes] check: craft 266/424
+[hyperframes] check: craft 267/424
+[hyperframes] check: craft 268/424
+[hyperframes] check: craft 269/424
+[hyperframes] check: craft 270/424
+[hyperframes] check: craft 271/424
+[hyperframes] check: craft 272/424
+[hyperframes] check: craft 273/424
+[hyperframes] check: craft 274/424
+[hyperframes] check: craft 275/424
+[hyperframes] check: craft 276/424
+[hyperframes] check: craft 277/424
+[hyperframes] check: craft 278/424
+[hyperframes] check: craft 279/424
+[hyperframes] check: craft 280/424
+[hyperframes] check: craft 281/424
+[hyperframes] check: craft 282/424
+[hyperframes] check: craft 283/424
+[hyperframes] check: craft 284/424
+[hyperframes] check: craft 285/424
+[hyperframes] check: craft 286/424
+[hyperframes] check: craft 287/424
+[hyperframes] check: craft 288/424
+[hyperframes] check: craft 289/424
+[hyperframes] check: craft 290/424
+[hyperframes] check: craft 291/424
+[hyperframes] check: craft 292/424
+[hyperframes] check: craft 293/424
+[hyperframes] check: craft 294/424
+[hyperframes] check: craft 295/424
+[hyperframes] check: craft 296/424
+[hyperframes] check: craft 297/424
+[hyperframes] check: craft 298/424
+[hyperframes] check: craft 299/424
+[hyperframes] check: craft 300/424
+[hyperframes] check: craft 301/424
+[hyperframes] check: craft 302/424
+[hyperframes] check: craft 303/424
+[hyperframes] check: craft 304/424
+[hyperframes] check: craft 305/424
+[hyperframes] check: craft 306/424
+[hyperframes] check: craft 307/424
+[hyperframes] check: craft 308/424
+[hyperframes] check: craft 309/424
+[hyperframes] check: craft 310/424
+[hyperframes] check: craft 311/424
+[hyperframes] check: craft 312/424
+[hyperframes] check: craft 313/424
+[hyperframes] check: craft 314/424
+[hyperframes] check: craft 315/424
+[hyperframes] check: craft 316/424
+[hyperframes] check: craft 317/424
+[hyperframes] check: craft 318/424
+[hyperframes] check: craft 319/424
+[hyperframes] check: craft 320/424
+[hyperframes] check: craft 321/424
+[hyperframes] check: craft 322/424
+[hyperframes] check: craft 323/424
+[hyperframes] check: craft 324/424
+[hyperframes] check: craft 325/424
+[hyperframes] check: craft 326/424
+[hyperframes] check: craft 327/424
+[hyperframes] check: craft 328/424
+[hyperframes] check: craft 329/424
+[hyperframes] check: craft 330/424
+[hyperframes] check: craft 331/424
+[hyperframes] check: craft 332/424
+[hyperframes] check: craft 333/424
+[hyperframes] check: craft 334/424
+[hyperframes] check: craft 335/424
+[hyperframes] check: craft 336/424
+[hyperframes] check: craft 337/424
+[hyperframes] check: craft 338/424
+[hyperframes] check: craft 339/424
+[hyperframes] check: craft 340/424
+[hyperframes] check: craft 341/424
+[hyperframes] check: craft 342/424
+[hyperframes] check: craft 343/424
+[hyperframes] check: craft 344/424
+[hyperframes] check: craft 345/424
+[hyperframes] check: craft 346/424
+[hyperframes] check: craft 347/424
+[hyperframes] check: craft 348/424
+[hyperframes] check: craft 349/424
+[hyperframes] check: craft 350/424
+[hyperframes] check: craft 351/424
+[hyperframes] check: craft 352/424
+[hyperframes] check: craft 353/424
+[hyperframes] check: craft 354/424
+[hyperframes] check: craft 355/424
+[hyperframes] check: craft 356/424
+[hyperframes] check: craft 357/424
+[hyperframes] check: craft 358/424
+[hyperframes] check: craft 359/424
+[hyperframes] check: craft 360/424
+[hyperframes] check: craft 361/424
+[hyperframes] check: craft 362/424
+[hyperframes] check: craft 363/424
+[hyperframes] check: craft 364/424
+[hyperframes] check: craft 365/424
+[hyperframes] check: craft 366/424
+[hyperframes] check: craft 367/424
+[hyperframes] check: craft 368/424
+[hyperframes] check: craft 369/424
+[hyperframes] check: craft 370/424
+[hyperframes] check: craft 371/424
+[hyperframes] check: craft 372/424
+[hyperframes] check: craft 373/424
+[hyperframes] check: craft 374/424
+[hyperframes] check: craft 375/424
+[hyperframes] check: craft 376/424
+[hyperframes] check: craft 377/424
+[hyperframes] check: craft 378/424
+[hyperframes] check: craft 379/424
+[hyperframes] check: craft 380/424
+[hyperframes] check: craft 381/424
+[hyperframes] check: craft 382/424
+[hyperframes] check: craft 383/424
+[hyperframes] check: craft 384/424
+[hyperframes] check: craft 385/424
+[hyperframes] check: craft 386/424
+[hyperframes] check: craft 387/424
+[hyperframes] check: craft 388/424
+[hyperframes] check: craft 389/424
+[hyperframes] check: craft 390/424
+[hyperframes] check: craft 391/424
+[hyperframes] check: craft 392/424
+[hyperframes] check: craft 393/424
+[hyperframes] check: craft 394/424
+[hyperframes] check: craft 395/424
+[hyperframes] check: craft 396/424
+[hyperframes] check: craft 397/424
+[hyperframes] check: craft 398/424
+[hyperframes] check: craft 399/424
+[hyperframes] check: craft 400/424
+[hyperframes] check: craft 401/424
+[hyperframes] check: craft 402/424
+[hyperframes] check: craft 403/424
+[hyperframes] check: craft 404/424
+[hyperframes] check: craft 405/424
+[hyperframes] check: craft 406/424
+[hyperframes] check: craft 407/424
+[hyperframes] check: craft 408/424
+[hyperframes] check: craft 409/424
+[hyperframes] check: craft 410/424
+[hyperframes] check: craft 411/424
+[hyperframes] check: craft 412/424
+[hyperframes] check: craft 413/424
+[hyperframes] check: craft 414/424
+[hyperframes] check: craft 415/424
+[hyperframes] check: craft 416/424
+[hyperframes] check: craft 417/424
+[hyperframes] check: craft 418/424
+[hyperframes] check: craft 419/424
+[hyperframes] check: craft 420/424
+[hyperframes] check: craft 421/424
+[hyperframes] check: craft 422/424
+[hyperframes] check: craft 423/424
+[hyperframes] check: craft 424/424
+[hyperframes] check: overlap 1/23
+[hyperframes] check: overlap 2/23
+[hyperframes] check: overlap 3/23
+[hyperframes] check: overlap 4/23
+[hyperframes] check: overlap 5/23
+[hyperframes] check: overlap 6/23
+[hyperframes] check: overlap 7/23
+[hyperframes] check: overlap 8/23
+[hyperframes] check: overlap 9/23
+[hyperframes] check: overlap 10/23
+[hyperframes] check: overlap 11/23
+[hyperframes] check: overlap 12/23
+[hyperframes] check: overlap 13/23
+[hyperframes] check: overlap 14/23
+[hyperframes] check: overlap 15/23
+[hyperframes] check: overlap 16/23
+[hyperframes] check: overlap 17/23
+[hyperframes] check: overlap 18/23
+[hyperframes] check: overlap 19/23
+[hyperframes] check: overlap 20/23
+[hyperframes] check: overlap 21/23
+[hyperframes] check: overlap 22/23
+[hyperframes] check: overlap 23/23
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 20.611,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 20.611,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 26.5,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 26.5,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 32.389,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      },
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "GSAP target  not found. https://gsap.com",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "53",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 44.167,
+        "url": "http://127.0.0.1:58822/",
+        "line": 69
+      }
+    ]
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 5,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 5.062,
+        "selector": "#hypA > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 300.11,
+          "top": 43,
+          "right": 330.11,
+          "bottom": 163,
+          "width": 30,
+          "height": 120
+        },
+        "containerSelector": "#hypA > div:nth-of-type(1) > div:nth-of-type(2)",
+        "text": "假设 A",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/tension.html",
+        "bbox": {
+          "x": 300.11,
+          "y": 43,
+          "width": 30,
+          "height": 120
+        },
+        "firstSeen": 5.062,
+        "lastSeen": 7.742,
+        "occurrences": 10,
+        "heldMs": 2679.9999999999995,
+        "times": [
+          5.062,
+          5.36,
+          5.657,
+          5.955,
+          6.253,
+          6.551,
+          6.848,
+          7.146,
+          7.444,
+          7.742
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 5.36,
+        "selector": "#hypB > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1051.89,
+          "top": 43,
+          "right": 1081.89,
+          "bottom": 163,
+          "width": 30,
+          "height": 120
+        },
+        "containerSelector": "#hypB > div:nth-of-type(1) > div:nth-of-type(2)",
+        "text": "假设 B",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/tension.html",
+        "bbox": {
+          "x": 1051.89,
+          "y": 43,
+          "width": 30,
+          "height": 120
+        },
+        "firstSeen": 5.36,
+        "lastSeen": 7.742,
+        "occurrences": 9,
+        "heldMs": 2381.9999999999995,
+        "times": [
+          5.36,
+          5.657,
+          5.955,
+          6.253,
+          6.551,
+          6.848,
+          7.146,
+          7.444,
+          7.742
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 2.944,
+        "selector": "#ans-label",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 450.4,
+          "top": 465.6,
+          "right": 534.4,
+          "bottom": 521.6,
+          "width": 84,
+          "height": 56
+        },
+        "containerSelector": "#board",
+        "text": "回答",
+        "fixHint": "Text is 84px x 56px inside 860px x 440px and overflows by up to 80px; widen the container to at least ~940px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 530,
+          "top": 320,
+          "right": 1390,
+          "bottom": 760,
+          "width": 860,
+          "height": 440
+        },
+        "overflow": {
+          "left": 79.6
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 450.4,
+          "y": 465.6,
+          "width": 84,
+          "height": 56
+        },
+        "firstSeen": 2.944,
+        "lastSeen": 2.944,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.944
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 2.944,
+        "selector": "#w1",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 450.4,
+          "top": 495,
+          "right": 618.4,
+          "bottom": 716.2,
+          "width": 168,
+          "height": 221.2
+        },
+        "containerSelector": "#board",
+        "text": "北",
+        "fixHint": "Text is 168px x 221px inside 860px x 440px and overflows by up to 80px; widen the container to at least ~940px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 530,
+          "top": 320,
+          "right": 1390,
+          "bottom": 760,
+          "width": 860,
+          "height": 440
+        },
+        "overflow": {
+          "left": 79.6
+        },
+        "dataAttributes": {
+          "data-start": "2.2",
+          "data-duration": "1.8",
+          "data-track-index": "2"
+        },
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 450.4,
+          "y": 495,
+          "width": 168,
+          "height": 221.2
+        },
+        "firstSeen": 2.944,
+        "lastSeen": 2.944,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.944
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 8.833,
+        "selector": "#reveal > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "right": 116.83,
+          "bottom": 21,
+          "width": 116.83,
+          "height": 21
+        },
+        "containerSelector": "#reveal > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1)",
+        "text": "工位 03 · 装置图",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/reveal.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 116.83,
+          "height": 21
+        },
+        "firstSeen": 8.833,
+        "lastSeen": 8.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.833
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 20.611,
+        "selector": "#embed > div:nth-of-type(1) > div:nth-of-type(8) > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 3.37,
+          "top": -33.99,
+          "right": 833.37,
+          "bottom": 77.97,
+          "width": 830.01,
+          "height": 111.96
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 33.99
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/embed.html",
+        "bbox": {
+          "x": 3.37,
+          "y": -33.99,
+          "width": 830.01,
+          "height": 111.96
+        },
+        "firstSeen": 20.611,
+        "lastSeen": 20.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          20.611
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 20.611,
+        "selector": "#arr3 > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 4.83,
+          "top": -54.04,
+          "right": 1165.42,
+          "bottom": 98.03,
+          "width": 1160.59,
+          "height": 152.07
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 54.04
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/embed.html",
+        "bbox": {
+          "x": 4.83,
+          "y": -54.04,
+          "width": 1160.59,
+          "height": 152.07
+        },
+        "firstSeen": 20.611,
+        "lastSeen": 20.611,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          20.611
+        ]
+      }
+    ],
+    "duration": 53,
+    "samples": [
+      2.944,
+      8.833,
+      14.722,
+      20.611,
+      26.5,
+      32.389,
+      38.278,
+      44.167,
+      50.056
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.944,
+      14.722,
+      26.5,
+      38.278,
+      50.056
+    ],
+    "checked": 23,
+    "passed": 23
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 01 · 一次回答\" renders at 16 px for 4.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 01 · 一次回答",
+        "selector": "#hook > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 132.83,
+          "height": 21
+        },
+        "time": 0,
+        "times": [
+          0
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 4,
+        "elements": [
+          {
+            "selector": "#hook > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 01 · 一次回答",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 4
+          }
+        ]
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 53 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 02 · 一个问题\" renders at 16 px for 4.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 02 · 一个问题",
+        "selector": "#tension > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/tension.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 132.83,
+          "height": 21
+        },
+        "time": 4,
+        "times": [
+          4
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 4,
+        "elements": [
+          {
+            "selector": "#tension > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 02 · 一个问题",
+            "fontPx": 16,
+            "time": 4,
+            "seconds": 4
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 03 · 装置图\" renders at 16 px for 4.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 03 · 装置图",
+        "selector": "#reveal > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/reveal.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 116.83,
+          "height": 21
+        },
+        "time": 8,
+        "times": [
+          8
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 4.5,
+        "elements": [
+          {
+            "selector": "#reveal > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 03 · 装置图",
+            "fontPx": 16,
+            "time": 8,
+            "seconds": 4.5
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"它 是 一 个 “ 下 一 个 词 预 测 器\" (11 words) is on screen 2.56 s (±0.01 s), under its 2.85 s floor: hold it about 0.5 s + 0.3 s a word (3.80 s here) before it leaves or changes; see references/motion.md.",
+        "text": "它 是 一 个 “ 下 一 个 词 预 测 器",
+        "selector": "#hero-in",
+        "dataAttributes": {},
+        "sourceFile": "compositions/reveal.html",
+        "bbox": {
+          "x": 393.69,
+          "y": 607.04,
+          "width": 87.12,
+          "height": 116
+        },
+        "time": 9.938,
+        "words": 11,
+        "seconds": 2.563,
+        "floorSeconds": 2.85
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"工位 04 · 切词\" at 16 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 04 · 切词",
+        "selector": "#token > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/token.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 100.83,
+          "height": 21
+        },
+        "time": 12.5,
+        "times": [
+          12.5,
+          15.125,
+          15.25,
+          15.25,
+          15.375,
+          15.375
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 6,
+        "elements": [
+          {
+            "selector": "#token > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 04 · 切词",
+            "fontPx": 16,
+            "time": 12.5,
+            "seconds": 6
+          },
+          {
+            "selector": "#tl1",
+            "text": "词元 1",
+            "fontPx": 16,
+            "time": 15.125,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#tl2",
+            "text": "词元 2",
+            "fontPx": 16,
+            "time": 15.25,
+            "seconds": 3.25
+          },
+          {
+            "selector": "#tl3",
+            "text": "词元 3",
+            "fontPx": 16,
+            "time": 15.25,
+            "seconds": 3.25
+          },
+          {
+            "selector": "#tl4",
+            "text": "词元 4",
+            "fontPx": 16,
+            "time": 15.375,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#tl5",
+            "text": "词元 5",
+            "fontPx": 16,
+            "time": 15.375,
+            "seconds": 3.125
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"中国 的 首都 是 ？\" (4 words) is on screen 1.13 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "中国 的 首都 是 ？",
+        "selector": "#sentence",
+        "dataAttributes": {},
+        "sourceFile": "compositions/token.html",
+        "bbox": {
+          "x": 703,
+          "y": 460,
+          "width": 514.1400000000001,
+          "height": 95
+        },
+        "time": 12.969,
+        "words": 4,
+        "seconds": 1.133,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 05 · 向量空间\" renders at 16 px for 6.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 05 · 向量空间",
+        "selector": "#embed > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/embed.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 132.83,
+          "height": 21
+        },
+        "time": 18.5,
+        "times": [
+          18.5
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 6,
+        "elements": [
+          {
+            "selector": "#embed > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 05 · 向量空间",
+            "fontPx": 16,
+            "time": 18.5,
+            "seconds": 6
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 06 · 注意力\" renders at 16 px for 9.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 06 · 注意力",
+        "selector": "#attention > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/attention.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 116.83,
+          "height": 21
+        },
+        "time": 24.5,
+        "times": [
+          24.5
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 9,
+        "elements": [
+          {
+            "selector": "#attention > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 06 · 注意力",
+            "fontPx": 16,
+            "time": 24.5,
+            "seconds": 9
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 07 · 概率\" renders at 16 px for 8.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 07 · 概率",
+        "selector": "#dist > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/dist.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 100.83,
+          "height": 21
+        },
+        "time": 33.5,
+        "times": [
+          33.5
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 8,
+        "elements": [
+          {
+            "selector": "#dist > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 07 · 概率",
+            "fontPx": 16,
+            "time": 33.5,
+            "seconds": 8
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.25 s (37.50–40.75 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 37.5,
+        "seconds": 3.25,
+        "floorSeconds": 3,
+        "until": 40.75
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"工位 08 · 循环\" renders at 16 px for 6.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "工位 08 · 循环",
+        "selector": "#loop > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/loop.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 100.83,
+          "height": 21
+        },
+        "time": 41.5,
+        "times": [
+          41.5
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 6,
+        "elements": [
+          {
+            "selector": "#loop > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "工位 08 · 循环",
+            "fontPx": 16,
+            "time": 41.5,
+            "seconds": 6
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"结案 · 一句话\" renders at 16 px for 5.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "结案 · 一句话",
+        "selector": "#claim > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/claim.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 93.33,
+          "height": 21
+        },
+        "time": 47.5,
+        "times": [
+          47.5
+        ],
+        "fontPx": 16,
+        "floorPx": 28,
+        "seconds": 5.5,
+        "elements": [
+          {
+            "selector": "#claim > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "结案 · 一句话",
+            "fontPx": 16,
+            "time": 47.5,
+            "seconds": 5.5
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 424
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "c72f44e5-a41f-4270-aa4d-215b0b40cb9a",
+    "revision": null,
+    "report": "D:\\cbfu\\work_interview\\广州市悠拓网络科技有限公司\\hyperframes-llm-explainer\\.hyperframes\\artifacts\\checks\\c72f44e5-a41f-4270-aa4d-215b0b40cb9a.json",
+    "attribution": "inputs-changed"
+  },
+  "_meta": {
+    "version": "0.8.191",
+    "latestVersion": "0.8.191",
+    "updateAvailable": false
+  }
+}

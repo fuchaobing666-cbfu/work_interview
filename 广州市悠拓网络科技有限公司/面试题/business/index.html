@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本周经营行动页 · 测评数据</title>
+<style>
+:root{color-scheme:light;--ink:#17263b;--muted:#63748a;--line:#e7edf4;--blue:#315cce}*{box-sizing:border-box}body{font:16px system-ui,sans-serif;background:#f4f7fb;color:var(--ink);margin:32px auto;max-width:1120px;padding:20px}.eyebrow,.note{color:var(--muted)}h1{font-size:30px;margin:6px 0 24px}.filters{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.filters select,.filters input,.filters button{font:inherit;padding:11px 14px;border:1px solid #ccd6e3;border-radius:10px;background:white}.filters input{min-width:220px}.filters button{background:var(--blue);border-color:var(--blue);color:#fff;cursor:pointer}.cards{display:flex;gap:16px}.card,section{background:white;padding:22px;border-radius:16px;margin:20px 0;box-shadow:0 5px 18px #243b5310}.card{flex:1}.card span{color:var(--muted)}strong{display:block;font-size:28px;margin-top:10px}.table-wrap{overflow-x:auto}table{width:100%;text-align:left;border-collapse:collapse;min-width:820px}td,th{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600}.metrics{line-height:1.75;color:#42536a;white-space:pre-line}.badge{display:inline-block;padding:4px 9px;border-radius:999px;background:#edf1f6;color:#506174;font-weight:700;white-space:nowrap}.badge.P0{background:#ffe7e5;color:#b42318}.badge.P1{background:#fff1d6;color:#9a5b00}.badge.P2{background:#e6efff;color:#2452b4}.reason{min-width:260px}.empty{text-align:center;color:var(--muted);padding:28px}.note{font-size:14px}@media(max-width:680px){body{margin:12px auto;padding:14px}.cards{flex-direction:column;gap:0}.card{flex:auto;margin:8px 0}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<p class="eyebrow">悠流 AI 应用测评 · 合成数据</p>
+<h1>本周经营行动页</h1>
+<div class="filters">
+  <select id="market" aria-label="按站点筛选">
+    <option value="">所有站点</option>
+    <option value="US">美国站</option>
+    <option value="DE">德国站</option>
+  </select>
+  <input id="sku" type="search" placeholder="搜索 SKU" aria-label="搜索 SKU" autocomplete="off">
+  <button id="refresh" type="button">刷新数据</button>
+</div>
+<div class="cards">
+  <div class="card"><span>本周净销售额</span><strong id="sales">—</strong></div>
+  <div class="card"><span>销售额环比</span><strong id="growth">—</strong></div>
+  <div class="card"><span>整体退货率</span><strong id="returns">—</strong></div>
+</div>
+<section>
+  <h2>站点 / SKU 风险明细</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>站点</th><th>SKU</th><th>风险类型</th><th>指标数值</th><th>判定理由</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+</section>
+<section><h2>数据质量与判断依据</h2><p id="quality" class="note">正在加载数据…</p></section>
+<script>
+const pct=x=>x==null?'未知':(Number(x)*100).toFixed(2)+'%';
+const siteName=market=>market==='US'?'美国站':market==='DE'?'德国站':market;
+const priority={P0:0,P1:1,P2:2,OBSERVE:3};
+let searchTimer;
+async function refresh(){
+  const params=new URLSearchParams();
+  if(market.value)params.set('market',market.value);
+  try{
+    const response=await fetch('/metrics.json?'+params.toString(),{headers:{Accept:'application/json'},cache:'no-store'});
+    if(!response.ok)throw Error(`HTTP ${response.status}：${await response.text()}`);
+    const data=await response.json();
+    sales.textContent=data.current_sales==null?'未知':'¥'+Number(data.current_sales).toLocaleString('zh-CN');
+    growth.textContent=pct(data.sales_growth);
+    returns.textContent=pct(data.return_rate);
+    const query=sku.value.trim().toLocaleLowerCase();
+    const items=(Array.isArray(data.rows)?data.rows:[])
+      .filter(item=>!query||String(item.sku).toLocaleLowerCase().includes(query))
+      .sort((a,b)=>(priority[a.risk]??99)-(priority[b.risk]??99)||String(a.market).localeCompare(String(b.market))||String(a.sku).localeCompare(String(b.sku)));
+    rows.replaceChildren();
+    if(!items.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=5;td.className='empty';td.textContent='没有匹配的 SKU 或站点';tr.append(td);rows.append(tr)}
+    for(const item of items){
+      const tr=document.createElement('tr');
+      const riskCell=document.createElement('td');
+      const risks=Array.isArray(item.risk_types)&&item.risk_types.length?item.risk_types:['无预警'];
+      risks.forEach((risk,index)=>{if(index)riskCell.append(document.createElement('br'));const badge=document.createElement('span');badge.className='badge '+(item.risk||'OBSERVE');badge.textContent=risk;riskCell.append(badge)});
+      const metricsCell=document.createElement('td');metricsCell.className='metrics';
+      metricsCell.textContent=`风险等级：${item.risk||'OBSERVE'}\n库存周转天数：${item.inventory_turnover_days==null?'未知':Number(item.inventory_turnover_days).toFixed(2)+' 天'}\n退货率：${pct(item.return_rate)}\n退货环比增长率：${pct(item.return_growth_rate)}`;
+      const reasonCell=document.createElement('td');reasonCell.className='reason';reasonCell.textContent=item.risk_reason||'暂无判定理由';
+      for(const value of [siteName(item.market),item.sku]){const td=document.createElement('td');td.textContent=value??'—';tr.append(td)}
+      tr.append(riskCell,metricsCell,reasonCell);rows.append(tr);
+    }
+    const missing=Number(data.ad_spend_missing)||0;
+    quality.textContent=`当前展示 ${items.length} 条风险明细；广告费用缺失 ${missing} 条。SKU 搜索支持部分匹配，风险明细按 P0、P1、P2、观察排序。`;
+  }catch(error){quality.textContent='运行错误：'+error.message;rows.replaceChildren()}
+}
+market.addEventListener('change',refresh);
+sku.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(refresh,180)});
+document.getElementById('refresh').addEventListener('click',refresh);
+refresh();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+# ===== IDE 配置 =====
+.idea/
+.vscode/
+*.iml
+*.suo
+*.vsidx
+
+# ===== Python 缓存（所有子目录自动生效）=====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ===== WorkBuddy、Hyperframes 临时目录（重点，递归所有层级）=====
+**/.workbuddy/
+**/.hyperframes/
+
+# ===== 通用临时、日志、压缩包 =====
+*.log
+*.tmp
+*.zip
+*.rar
+*.7z
+.DS_Store
+Thumbs.db
+
+# ===== 系统导出缓存、备份文件 =====
+*.bak
+*.swp
+*.swo
+*~
+
+# ===== Node 相关（hyperframes前端会用到）=====
+node_modules/
+package-lock.json
+yarn.lock
+.npm/
+
+# ===== 如果你不需要忽略pdf/png简历截图，下面两行保持注释状态，需要就取消注释
+# *.pdf
+# *.png

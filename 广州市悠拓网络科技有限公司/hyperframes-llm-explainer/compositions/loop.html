@@ -1,0 +1,320 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    svg.layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    #larrow-path {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+    }
+    #larrow-head {
+      fill: var(--accent);
+      opacity: 0;
+    }
+    #ltrack {
+      position: absolute;
+      left: 240px;
+      top: 299px;
+      width: 1440px;
+      height: 2px;
+      background: var(--ink);
+    }
+    #lticks {
+      position: absolute;
+      left: 240px;
+      top: 302px;
+      width: 1440px;
+      height: 12px;
+      background: repeating-linear-gradient(
+        to right,
+        rgba(27, 36, 48, 0.35) 0 1px,
+        transparent 1px 40px
+      );
+    }
+    .slot {
+      top: 190px;
+      width: 200px;
+      height: 110px;
+    }
+    #s0 {
+      left: 310px;
+    }
+    #s1 {
+      left: 530px;
+    }
+    #s2 {
+      left: 750px;
+    }
+    #s3 {
+      left: 970px;
+    }
+    #s4 {
+      left: 1190px;
+    }
+    #s5 {
+      left: 1410px;
+    }
+    #bei-chip {
+      left: 1190px;
+    }
+    #jing-chip {
+      left: 1410px;
+    }
+    .slot-in {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      font-weight: 700;
+    }
+    .empty {
+      border: 2px dashed rgba(27, 36, 48, 0.4);
+      background: transparent;
+      box-shadow: none;
+    }
+    .empty::after {
+      display: none;
+    }
+    #loop-label {
+      position: absolute;
+      left: 778px;
+      top: 412px;
+      font-size: 36px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #board2 {
+      left: 560px;
+      top: 630px;
+      width: 800px;
+      height: 360px;
+    }
+    #board2-in {
+      position: absolute;
+      inset: 0;
+    }
+    #q2 {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      width: 720px;
+      height: 72px;
+      border: 2px solid var(--ink);
+      background: #ffffff;
+    }
+    #q2-text {
+      position: absolute;
+      left: 24px;
+      top: 14px;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #cursor2 {
+      position: absolute;
+      left: 340px;
+      top: 14px;
+      width: 20px;
+      height: 44px;
+      background: var(--ink);
+    }
+    #div2 {
+      position: absolute;
+      left: 40px;
+      top: 140px;
+      width: 720px;
+      height: 1px;
+      background: rgba(27, 36, 48, 0.2);
+    }
+    #ans2-label {
+      position: absolute;
+      left: 64px;
+      top: 164px;
+      font-size: 30px;
+      color: var(--muted);
+    }
+    #ans2 {
+      position: absolute;
+      left: 64px;
+      top: 205px;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div data-hf-id="hf-28q5" id="root" data-composition-id="loop" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ov9m" id="station" class="clip station" data-start="0" data-duration="6" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-a7rj" class="tx">工位 08 · 循环</span>
+    </div>
+    <div data-hf-id="hf-pd4i" id="ltrack" class="clip" data-start="0" data-duration="6" data-track-index="1"></div>
+    <div data-hf-id="hf-nt3e" id="lticks" class="clip" data-start="0" data-duration="6" data-track-index="2"></div>
+    <div data-hf-id="hf-7w3h" id="s0" class="clip plate slot" data-start="0.1" data-duration="5.9" data-track-index="3">
+      <div data-hf-id="hf-bx32" class="slot-in">中国</div>
+    </div>
+    <div data-hf-id="hf-fanu" id="s1" class="clip plate slot" data-start="0.16" data-duration="5.84" data-track-index="4">
+      <div data-hf-id="hf-pnos" class="slot-in">的</div>
+    </div>
+    <div data-hf-id="hf-6j08" id="s2" class="clip plate slot" data-start="0.22" data-duration="5.78" data-track-index="5">
+      <div data-hf-id="hf-kgrx" class="slot-in">首都</div>
+    </div>
+    <div data-hf-id="hf-eqiy" id="s3" class="clip plate slot" data-start="0.28" data-duration="5.72" data-track-index="6">
+      <div data-hf-id="hf-c90d" class="slot-in">是</div>
+    </div>
+    <div data-hf-id="hf-lhej" id="s4" class="clip plate slot empty" data-start="0" data-duration="6" data-track-index="7"></div>
+    <div data-hf-id="hf-ep34" id="bei-chip" class="clip plate slot" data-start="0.5" data-duration="5.5" data-track-index="8">
+      <div data-hf-id="hf-rkwl" class="slot-in">北</div>
+    </div>
+    <div data-hf-id="hf-u4g1" id="s5" class="clip plate slot empty" data-start="2.2" data-duration="3.8" data-track-index="9"></div>
+    <div data-hf-id="hf-rzqj" id="jing-chip" class="clip plate slot" data-start="2.7" data-duration="3.3" data-track-index="10">
+      <div data-hf-id="hf-i4is" class="slot-in">京</div>
+    </div>
+    <svg data-hf-id="hf-mn2z" id="larrow" class="layer" viewBox="0 0 1920 1080">
+      <path data-hf-id="hf-f9ju" id="larrow-path" d="M 1290 300 L 1290 400 L 410 400 L 410 318" pathLength="100" />
+      <polygon data-hf-id="hf-irhp" id="larrow-head" points="402,316 418,316 410,296" />
+    </svg>
+    <div data-hf-id="hf-jq0k" id="loop-label" class="clip" data-start="1.8" data-duration="4.2" data-track-index="11">再猜一次</div>
+    <div data-hf-id="hf-tet8" id="board2" class="clip plate" data-start="3.5" data-duration="2.5" data-track-index="12">
+      <div data-hf-id="hf-q3sl" id="board2-in">
+        <div data-hf-id="hf-lxe8" id="q2">
+          <div data-hf-id="hf-q04l" id="q2-text">中国的首都是？</div>
+          <div data-hf-id="hf-ror3" id="cursor2"></div>
+        </div>
+        <div data-hf-id="hf-2h2o" id="div2"></div>
+        <div data-hf-id="hf-rkgw" id="ans2-label">回答</div>
+        <div data-hf-id="hf-6dkv" id="ans2">
+          <span data-hf-id="hf-v8lg" id="w1b" class="clip" data-start="4.05" data-duration="1.95" data-track-index="13">北</span
+          ><span data-hf-id="hf-beas" id="w2b" class="clip" data-start="4.2" data-duration="1.8" data-track-index="14">京</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ltrack", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.inOut" }, 0);
+    tl.fromTo("#lticks", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.1);
+    tl.fromTo("#s0, #s1, #s2, #s3", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power3.out", stagger: 0.06 }, 0.1);
+    tl.fromTo("#s0 .slot-in, #s1 .slot-in, #s2 .slot-in, #s3 .slot-in", { y: 30 }, { y: 0, duration: 0.3, ease: "power3.out", stagger: 0.06 }, 0.1);
+    tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.2);
+    tl.fromTo("#bei-chip", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.5);
+    tl.fromTo("#bei-chip .slot-in", { x: -1450 }, { x: 0, duration: 0.6, ease: "power3.out" }, 0.5);
+    tl.fromTo("#larrow-path", { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 0.8, ease: "none" }, 1.3);
+    tl.fromTo("#larrow-head", { opacity: 0 }, { opacity: 1, duration: 0.15 }, 2.0);
+    tl.fromTo(
+      "#loop-label",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.4, ease: "power4.out" },
+      1.8,
+    );
+    tl.fromTo("#s5", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 2.2);
+    tl.fromTo("#jing-chip", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.7);
+    tl.fromTo("#jing-chip .slot-in", { y: -90 }, { y: 0, duration: 0.5, ease: "power3.out" }, 2.7);
+    tl.fromTo(
+      "#board2",
+      { opacity: 0, filter: "blur(8px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" },
+      3.5,
+    );
+    tl.fromTo("#board2-in", { scale: 0.96 }, { scale: 1, duration: 0.5, ease: "power4.out" }, 3.5);
+    tl.fromTo(
+      "#w1b",
+      { opacity: 0, filter: "blur(10px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.15, ease: "power3.out" },
+      4.05,
+    );
+    tl.fromTo(
+      "#w2b",
+      { opacity: 0, filter: "blur(10px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.15, ease: "power3.out" },
+      4.2,
+    );
+    tl.to(
+      "#board2-in",
+      { scale: 0.96, opacity: 0, filter: "blur(10px)", duration: 0.5, ease: "power3.in" },
+      5.5,
+    );
+    window.__timelines["loop"] = tl;
+  </script>
+</template>

@@ -1,0 +1,334 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    svg.layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    #curves path {
+      fill: none;
+      stroke: var(--ink);
+      stroke-linecap: round;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+    }
+    .rlabel {
+      position: absolute;
+      right: 1420px;
+      width: 200px;
+      text-align: right;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #rl1 {
+      top: 278px;
+    }
+    #rl2 {
+      top: 388px;
+    }
+    #rl3 {
+      top: 498px;
+    }
+    #rl4 {
+      top: 608px;
+    }
+    #rl5 {
+      top: 718px;
+    }
+    .clabel {
+      position: absolute;
+      top: 216px;
+      width: 88px;
+      margin-left: -44px;
+      text-align: center;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #cl1 {
+      left: 560px;
+    }
+    #cl2 {
+      left: 670px;
+    }
+    #cl3 {
+      left: 780px;
+    }
+    #cl4 {
+      left: 890px;
+    }
+    #cl5 {
+      left: 1000px;
+    }
+    #band {
+      left: 300px;
+      top: 575px;
+      width: 780px;
+      height: 110px;
+    }
+    #band-in {
+      position: absolute;
+      inset: 0;
+      background: rgba(27, 36, 48, 0.06);
+      transform-origin: left center;
+    }
+    #axis {
+      position: absolute;
+      left: 320px;
+      top: 859px;
+      width: 1280px;
+      height: 2px;
+      background: var(--ink);
+    }
+    #axisticks {
+      position: absolute;
+      left: 320px;
+      top: 862px;
+      width: 1280px;
+      height: 12px;
+      background: repeating-linear-gradient(
+        to right,
+        rgba(27, 36, 48, 0.35) 0 1px,
+        transparent 1px 40px
+      );
+    }
+    .st {
+      width: 460px;
+      height: 300px;
+    }
+    #st1 {
+      left: 1180px;
+      top: 400px;
+    }
+    #st2 {
+      left: 1194px;
+      top: 414px;
+    }
+    #st3 {
+      left: 1208px;
+      top: 428px;
+    }
+    #st4 {
+      left: 1222px;
+      top: 442px;
+    }
+    .st-in {
+      position: absolute;
+      inset: 0;
+    }
+    #st-label {
+      position: absolute;
+      left: 1180px;
+      top: 780px;
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #caption2 {
+      position: absolute;
+      left: 780px;
+      top: 950px;
+      width: 360px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+  </style>
+  <div data-hf-id="hf-6xgr" id="root" data-composition-id="attention" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-guij" id="station" class="clip station" data-start="0" data-duration="9" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-xpo0" class="tx">工位 06 · 注意力</span>
+    </div>
+    <div data-hf-id="hf-y7og" id="rl1" class="clip rlabel" data-start="0.2" data-duration="8.8" data-track-index="1">中国</div>
+    <div data-hf-id="hf-rbdb" id="rl2" class="clip rlabel" data-start="0.25" data-duration="8.75" data-track-index="2">的</div>
+    <div data-hf-id="hf-jtoz" id="rl3" class="clip rlabel" data-start="0.3" data-duration="8.7" data-track-index="3">首都</div>
+    <div data-hf-id="hf-oz26" id="rl4" class="clip rlabel" data-start="0.35" data-duration="8.65" data-track-index="4">是</div>
+    <div data-hf-id="hf-wlhr" id="rl5" class="clip rlabel" data-start="0.4" data-duration="8.6" data-track-index="5">？</div>
+    <div data-hf-id="hf-ifot" id="cl1" class="clip clabel" data-start="0.3" data-duration="8.7" data-track-index="6">中国</div>
+    <div data-hf-id="hf-o3l6" id="cl2" class="clip clabel" data-start="0.35" data-duration="8.65" data-track-index="7">的</div>
+    <div data-hf-id="hf-7t9q" id="cl3" class="clip clabel" data-start="0.4" data-duration="8.6" data-track-index="8">首都</div>
+    <div data-hf-id="hf-9epj" id="cl4" class="clip clabel" data-start="0.45" data-duration="8.55" data-track-index="9">是</div>
+    <div data-hf-id="hf-qshr" id="cl5" class="clip clabel" data-start="0.5" data-duration="8.5" data-track-index="10">？</div>
+    <svg data-hf-id="hf-s0wj" id="mx" class="layer" viewBox="0 0 1920 1080">
+      <g data-hf-id="hf-tvz8" id="mxgrid" stroke="rgba(27,36,48,0.07)" stroke-width="1">
+        <line data-hf-id="hf-yheg" x1="560" y1="300" x2="1000" y2="300" />
+        <line data-hf-id="hf-5wlw" x1="560" y1="410" x2="1000" y2="410" />
+        <line data-hf-id="hf-s8c4" x1="560" y1="520" x2="1000" y2="520" />
+        <line data-hf-id="hf-vwgo" x1="560" y1="630" x2="1000" y2="630" />
+        <line data-hf-id="hf-ds7s" x1="560" y1="740" x2="1000" y2="740" />
+        <line data-hf-id="hf-4eqo" x1="560" y1="300" x2="560" y2="740" />
+        <line data-hf-id="hf-ckjo" x1="670" y1="300" x2="670" y2="740" />
+        <line data-hf-id="hf-p5l4" x1="780" y1="300" x2="780" y2="740" />
+        <line data-hf-id="hf-bm1w" x1="890" y1="300" x2="890" y2="740" />
+        <line data-hf-id="hf-ok3c" x1="1000" y1="300" x2="1000" y2="740" />
+      </g>
+      <g data-hf-id="hf-0qcc" fill="#1b2430">
+        <circle data-hf-id="hf-h4ck" cx="560" cy="300" r="6" />
+        <circle data-hf-id="hf-q3o0" cx="670" cy="300" r="6" />
+        <circle data-hf-id="hf-2w4w" cx="780" cy="300" r="6" />
+        <circle data-hf-id="hf-w2zg" cx="890" cy="300" r="6" />
+        <circle data-hf-id="hf-sdr0" cx="1000" cy="300" r="6" />
+        <circle data-hf-id="hf-4694" cx="560" cy="410" r="6" />
+        <circle data-hf-id="hf-qvbw" cx="670" cy="410" r="6" />
+        <circle data-hf-id="hf-fa9o" cx="780" cy="410" r="6" />
+        <circle data-hf-id="hf-c2u8" cx="890" cy="410" r="6" />
+        <circle data-hf-id="hf-8dls" cx="1000" cy="410" r="6" />
+        <circle data-hf-id="hf-h3zs" cx="560" cy="520" r="6" />
+        <circle data-hf-id="hf-u19o" cx="670" cy="520" r="6" />
+        <circle data-hf-id="hf-ti18" cx="780" cy="520" r="6" />
+        <circle data-hf-id="hf-2ca8" cx="890" cy="520" r="6" />
+        <circle data-hf-id="hf-yn1s" cx="1000" cy="520" r="6" />
+        <circle data-hf-id="hf-a5pg" cx="560" cy="630" r="6" />
+        <circle data-hf-id="hf-4r60" cx="670" cy="630" r="6" />
+        <circle data-hf-id="hf-dhns" cx="780" cy="630" r="6" />
+        <circle data-hf-id="hf-aofw" cx="890" cy="630" r="6" />
+        <circle data-hf-id="hf-b16k" cx="1000" cy="630" r="6" />
+        <circle data-hf-id="hf-nbfg" cx="560" cy="740" r="6" />
+        <circle data-hf-id="hf-wjbs" cx="670" cy="740" r="6" />
+        <circle data-hf-id="hf-qfeg" cx="780" cy="740" r="6" />
+        <circle data-hf-id="hf-cbg4" cx="890" cy="740" r="6" />
+        <circle data-hf-id="hf-8m7o" cx="1000" cy="740" r="6" />
+      </g>
+    </svg>
+    <div data-hf-id="hf-0tpt" id="band" class="clip" data-start="1.8" data-duration="7.2" data-track-index="11">
+      <div data-hf-id="hf-x3fw" id="band-in"></div>
+    </div>
+    <svg data-hf-id="hf-zvco" id="curves" class="layer" viewBox="0 0 1920 1080">
+      <path data-hf-id="hf-9o67" id="c1" d="M 1080 630 Q 1000 380 780 282" pathLength="100" stroke-width="7" />
+      <path data-hf-id="hf-k7ww" id="c2" d="M 1080 630 Q 820 500 560 282" pathLength="100" stroke-width="4" />
+      <path data-hf-id="hf-1og2" id="c3" d="M 1080 630 Q 940 440 670 282" pathLength="100" stroke-width="2.5" />
+    </svg>
+    <div data-hf-id="hf-890o" id="axis" class="clip" data-start="1.2" data-duration="7.8" data-track-index="12"></div>
+    <div data-hf-id="hf-wjh1" id="axisticks" class="clip" data-start="1.2" data-duration="7.8" data-track-index="13"></div>
+    <div data-hf-id="hf-ixaw" id="st1" class="clip plate st" data-start="5.0" data-duration="4.0" data-track-index="14">
+      <div data-hf-id="hf-skrn" class="st-in"></div>
+    </div>
+    <div data-hf-id="hf-f9ck" id="st2" class="clip plate st" data-start="5.15" data-duration="3.85" data-track-index="15">
+      <div data-hf-id="hf-ebkz" class="st-in"></div>
+    </div>
+    <div data-hf-id="hf-bmrd" id="st3" class="clip plate st" data-start="5.3" data-duration="3.7" data-track-index="16">
+      <div data-hf-id="hf-dx9y" class="st-in"></div>
+    </div>
+    <div data-hf-id="hf-yplg" id="st4" class="clip plate st" data-start="5.45" data-duration="3.55" data-track-index="17">
+      <div data-hf-id="hf-diyx" class="st-in"></div>
+    </div>
+    <div data-hf-id="hf-wq5t" id="st-label" class="clip" data-start="5.8" data-duration="3.2" data-track-index="18">重复很多层</div>
+    <div data-hf-id="hf-on8y" id="caption2" class="clip" data-start="6.6" data-duration="2.4" data-track-index="19">
+      每一层，都把上文再看一遍
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(
+      ".rlabel, .clabel",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "power3.out" },
+      0.2,
+    );
+    tl.fromTo("#mxgrid", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.4);
+    tl.fromTo(
+      "#mx circle",
+      { scale: 0, transformOrigin: "center center" },
+      { scale: 1, duration: 0.18, ease: "power3.out", stagger: 0.03 },
+      0.7,
+    );
+    tl.fromTo("#axis", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.inOut" }, 1.2);
+    tl.fromTo("#axisticks", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.3);
+    tl.fromTo("#band", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.8);
+    tl.fromTo("#band-in", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.inOut" }, 1.8);
+    tl.to("#rl4", { color: "#c24018", duration: 0.3, ease: "power2.out" }, 1.9);
+    tl.fromTo("#c1", { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 0.7, ease: "none" }, 2.6);
+    tl.fromTo("#c2", { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 0.7, ease: "none" }, 2.85);
+    tl.fromTo("#c3", { strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 0.7, ease: "none" }, 3.1);
+    tl.fromTo(".st", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out", stagger: 0.15 }, 5.0);
+    tl.fromTo(".st-in", { x: 80 }, { x: 0, duration: 0.4, ease: "power4.out", stagger: 0.15 }, 5.0);
+    tl.fromTo(
+      "#st-label",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: "power4.out" },
+      5.8,
+    );
+    tl.fromTo(
+      "#caption2",
+      { opacity: 0, filter: "blur(6px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.4, ease: "power4.out" },
+      6.6,
+    );
+    window.__timelines["attention"] = tl;
+  </script>
+</template>

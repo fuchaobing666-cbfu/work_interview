@@ -1,0 +1,200 @@
+<template>
+  <style>
+    :root {
+      --ground: #eceef0;
+      --ink: #1b2430;
+      --accent: #c24018;
+      --muted: rgba(27, 36, 48, 0.6);
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyh.ttc");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "YaHei";
+      src: url("assets/fonts/msyhbd.ttc");
+      font-weight: 700;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      font-family: "YaHei", sans-serif;
+      color: var(--ink);
+    }
+    .plate {
+      position: absolute;
+      background: #ffffff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 6px 0 rgba(27, 36, 48, 0.08);
+    }
+    .plate::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size:
+        26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px, 26px 2px, 2px 26px;
+      background-position:
+        left top, left top, right top, right top, left bottom, left bottom, right bottom, right bottom;
+      background-repeat: no-repeat;
+    }
+    .station {
+      position: absolute;
+      left: 200px;
+      top: 112px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .station .mk {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+    }
+    .station .tx {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .dbox {
+      top: 300px;
+      width: 340px;
+      height: 130px;
+    }
+    #box1 {
+      left: 330px;
+    }
+    #box2 {
+      left: 790px;
+    }
+    #box3 {
+      left: 1250px;
+      border-color: var(--accent);
+    }
+    .dbox-in {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    #box3 .dbox-in {
+      color: var(--accent);
+    }
+    .arrow {
+      top: 364px;
+      width: 120px;
+      height: 2px;
+    }
+    #arr1 {
+      left: 670px;
+    }
+    #arr2 {
+      left: 1130px;
+    }
+    .arrow-line {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      transform-origin: left center;
+    }
+    .arrow-head {
+      position: absolute;
+      right: -3px;
+      top: -6px;
+      width: 14px;
+      height: 14px;
+      opacity: 0;
+    }
+    .arrow-head i {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+    #hero {
+      position: absolute;
+      left: 388px;
+      top: 600px;
+      width: 1144px;
+      height: 130px;
+    }
+    #hero-in {
+      font-size: 88px;
+      font-weight: 700;
+      line-height: 130px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      white-space: nowrap;
+    }
+    #hero-in span {
+      display: inline-block;
+    }
+  </style>
+  <div data-hf-id="hf-yqoq" id="root" data-composition-id="reveal" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-9999" id="station" class="clip station" data-start="0" data-duration="4.5" data-track-index="0">
+      <span data-hf-id="hf-ic85" class="mk"></span><span data-hf-id="hf-6mju" class="tx">工位 03 · 装置图</span>
+    </div>
+    <div data-hf-id="hf-t2oy" id="box1" class="clip plate dbox" data-start="0" data-duration="4.5" data-track-index="1">
+      <div data-hf-id="hf-77je" class="dbox-in">上文……</div>
+    </div>
+    <div data-hf-id="hf-5bz5" id="arr1" class="clip arrow" data-start="0.4" data-duration="4.1" data-track-index="2">
+      <div data-hf-id="hf-vkvm" class="arrow-line"></div>
+      <div data-hf-id="hf-93ui" class="arrow-head"><i data-hf-id="hf-wt6k"></i></div>
+    </div>
+    <div data-hf-id="hf-m4s8" id="box2" class="clip plate dbox" data-start="0.8" data-duration="3.7" data-track-index="3">
+      <div data-hf-id="hf-o6ny" class="dbox-in">？</div>
+    </div>
+    <div data-hf-id="hf-6qzs" id="arr2" class="clip arrow" data-start="1.2" data-duration="3.3" data-track-index="4">
+      <div data-hf-id="hf-iss6" class="arrow-line"></div>
+      <div data-hf-id="hf-seou" class="arrow-head"><i data-hf-id="hf-zeb8"></i></div>
+    </div>
+    <div data-hf-id="hf-6nz4" id="box3" class="clip plate dbox" data-start="1.5" data-duration="3.0" data-track-index="5">
+      <div data-hf-id="hf-8s4z" class="dbox-in">下一个词</div>
+    </div>
+    <div data-hf-id="hf-22je" id="hero" class="clip" data-start="1.9" data-duration="3.6" data-track-index="6">
+      <div data-hf-id="hf-zrj3" id="hero-in"><span data-hf-id="hf-jax2">它</span><span data-hf-id="hf-0cui">是</span><span data-hf-id="hf-9vjn">一</span><span data-hf-id="hf-ima9">个</span><span data-hf-id="hf-1xjb">“</span><span data-hf-id="hf-6ase">下</span><span data-hf-id="hf-me6r">一</span><span data-hf-id="hf-y9xh">个</span><span data-hf-id="hf-j2pw">词</span><span data-hf-id="hf-41bz">预</span><span data-hf-id="hf-fw7y">测</span><span data-hf-id="hf-b1t7">器</span><span data-hf-id="hf-2buc">”</span></div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#box1", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 0);
+    tl.fromTo("#box1 .dbox-in", { scale: 0.94 }, { scale: 1, duration: 0.4, ease: "power4.out" }, 0);
+    tl.fromTo("#arr1 .arrow-line", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 0.4);
+    tl.fromTo("#arr1 .arrow-head", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 0.65);
+    tl.fromTo("#box2", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 0.8);
+    tl.fromTo("#box2 .dbox-in", { scale: 0.94 }, { scale: 1, duration: 0.4, ease: "power4.out" }, 0.8);
+    tl.fromTo("#arr2 .arrow-line", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 1.2);
+    tl.fromTo("#arr2 .arrow-head", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 1.45);
+    tl.fromTo("#box3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power4.out" }, 1.5);
+    tl.fromTo("#box3 .dbox-in", { scale: 0.94 }, { scale: 1, duration: 0.4, ease: "power4.out" }, 1.5);
+    tl.fromTo(
+      "#hero-in span",
+      { opacity: 0, filter: "blur(8px)", y: 6 },
+      { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.14, ease: "power3.out", stagger: 0.08 },
+      1.9,
+    );
+    window.__timelines["reveal"] = tl;
+  </script>
+</template>
